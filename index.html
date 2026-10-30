@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vignesh | Mechanical Engineer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #100707;
+    color: white;
+}
+
+header {
+    background: #240707;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #a00000;
+}
+
+.logo {
+    color: #ff3030;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 8%;
+    flex-wrap: wrap;
+    background: linear-gradient(120deg,#180505,#380909,#100707);
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #ff3030;
+}
+
+.hero h3 {
+    color: #ff6565;
+}
+
+.hero p {
+    color: #ccc;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.btn {
+    display: inline-block;
+    background: #b00000;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ff3030;
+}
+
+.gear {
+    font-size: 190px;
+    color: #d71919;
+    animation: rotate 12s linear infinite;
+    text-shadow: 0 0 30px red;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    color: #ff3030;
+    margin-bottom: 35px;
+}
+
+.about {
+    background: #190909;
+    text-align: center;
+}
+
+.about p {
+    color: #ccc;
+    line-height: 1.9;
+    max-width: 750px;
+    margin: auto;
+}
+
+.skills-container, .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #260b0b;
+    border: 1px solid #7d1515;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #a00000;
+}
+
+.card h3 {
+    color: #ff4545;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.contact {
+    text-align: center;
+    background: #190909;
+}
+
+.contact p {
+    color: #ccc;
+    margin: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #240707;
+    color: #ff5555;
+}
+
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 7px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .gear {
+        font-size: 120px;
+        margin-top: 40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">VIGNESH.</div>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+
+    <div>
+        <h3>WELCOME TO MY PORTFOLIO</h3>
+        <h1>I'm <span>VIGNESH</span></h1>
+        <h3>Future Mechanical Engineer</h3>
+
+        <p>
+            First Year Mechanical Engineering Student
+            at Mount Zion College of Engineering and Technology.
+            Passionate about machines, design, technology
+            and innovation.
+        </p>
+
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </div>
+
+    <div class="gear">⚙</div>
+
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2 class="title">ABOUT ME</h2>
+
+    <p>
+        Hello! I'm Vignesh, a first-year Mechanical Engineering
+        student at Mount Zion College of Engineering and Technology.
+        I am interested in mechanical machines, engineering design,
+        modern technology and innovation.
+
+        My goal is to develop my engineering knowledge,
+        improve my technical skills and create innovative
+        mechanical projects.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="title">MY INTERESTS</h2>
+
+    <div class="skills-container">
+
+        <div class="card">
+            <h3>⚙ Mechanical Design</h3>
+            <p>Learning machine components and mechanical design.</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Programming</h3>
+            <p>Exploring programming and engineering applications.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔩 Machine Technology</h3>
+            <p>Understanding machines and manufacturing technology.</p>
+        </div>
+
+        <div class="card">
+            <h3>💡 Innovation</h3>
+            <p>Developing creative ideas and engineering solutions.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="about">
+    <h2 class="title">MY PROJECTS</h2>
+
+    <div class="projects-container">
+
+        <div class="card">
+            <h3>Project 01</h3>
+            <p>Mechanical Engineering Mini Project</p>
+        </div>
+
+        <div class="card">
+            <h3>Project 02</h3>
+            <p>Machine Design and Innovation</p>
+        </div>
+
+        <div class="card">
+            <h3>Project 03</h3>
+            <p>Future Engineering Concepts</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="title">CONTACT ME</h2>
+
+    <p>Name: Vignesh</p>
+    <p>Department: Mechanical Engineering</p>
+    <p>College: Mount Zion College of Engineering and Technology</p>
+
+    <p>Let's connect and create something innovative!</p>
+
+    <a href="mailto:yourmail@gmail.com" class="btn">
+        Email Me
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 VIGNESH | MECHANICAL ENGINEERING PORTFOLIO</p>
+    <p>DESIGNED WITH PASSION ⚙</p>
+</footer>
+
+<script>
+    // Smooth scrolling for navigation
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
